@@ -1,5 +1,5 @@
 (function () {
-  const storeUrl = "https://streetstyle.maisonlooks.com/";
+  const storeUrl = "https://maisonlooks.com/en/products";
   const products = window.MAISONLOOKS_PRODUCTS || [];
   const categoryGrid = document.querySelector("#categoryGrid");
   const filterTabs = document.querySelector("#filterTabs");
@@ -99,7 +99,7 @@
                 <span class="price">${formatPrice(product.price)}</span>
                 <span class="qc">${product.qc}</span>
               </div>
-              <a href="${storeUrl}" rel="noopener">Shop at MaisonLooks</a>
+              <a href="${storeUrl}" target="_blank" rel="noopener noreferrer">Shop at MaisonLooks</a>
             </div>
           </article>
         `

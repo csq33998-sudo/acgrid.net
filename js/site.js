@@ -399,7 +399,7 @@
   storeSearch.addEventListener("submit", (event) => {
     event.preventDefault();
     const query = storeSearchInput.value.trim();
-    const url = "https://streetstyle.maisonlooks.com/en/search?q=" + encodeURIComponent(query);
+    const url = "https://maisonlooks.com/en/products?search=" + encodeURIComponent(query);
     window.open(url, "_blank", "noopener,noreferrer");
   });
 })();
