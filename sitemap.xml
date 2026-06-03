@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://acgrid.net/</loc>
+    <lastmod>2026-06-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://acgrid.net/assets/site-icon.png</image:loc>
+      <image:title>AlIChinaBuy AllChinaBuy spreadsheet site icon</image:title>
+      <image:caption>AlIChinaBuy icon for an AllChinaBuy spreadsheet-style streetwear directory with QC photos.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://acgrid.net/assets/original-icon.png</image:loc>
+      <image:title>AlIChinaBuy AllChinaBuy spreadsheet brand icon</image:title>
+      <image:caption>Green AlIChinaBuy brand icon used for AllChinaBuy spreadsheet finds and QC photo discovery.</image:caption>
+    </image:image>
+  </url>
+</urlset>
