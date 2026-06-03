@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AllChinaBuy Finds | Spreadsheet QC Photo Picks</title>
+    <meta
+      name="description"
+      content="Browse AllChinaBuy spreadsheet finds with QC photo notes, MaisonLooks streetwear picks, product categories, prices, ratings, and search filters."
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#43c7a8" />
+    <link rel="canonical" href="https://acgrid.net/finds.html" />
+    <link rel="icon" type="image/png" href="assets/site-icon.png" />
+    <link rel="apple-touch-icon" href="assets/site-icon.png" />
+    <link rel="stylesheet" href="styles.css?v=5" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://acgrid.net/finds.html" />
+    <meta property="og:title" content="AllChinaBuy Finds | Spreadsheet QC Photo Picks" />
+    <meta
+      property="og:description"
+      content="Search AllChinaBuy spreadsheet-style streetwear finds with QC photo notes and MaisonLooks product shortcuts."
+    />
+    <meta property="og:image" content="https://acgrid.net/assets/site-icon.png" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "@id": "https://acgrid.net/finds.html#webpage",
+        "url": "https://acgrid.net/finds.html",
+        "name": "AllChinaBuy Finds | Spreadsheet QC Photo Picks",
+        "isPartOf": { "@id": "https://acgrid.net/#website" },
+        "description": "Search AllChinaBuy spreadsheet finds with QC photo notes, product categories, prices, and MaisonLooks streetwear links.",
+        "inLanguage": "en"
+      }
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="logo" href="index.html">
+        <span class="logo-lockup">
+          <img
+            class="logo-icon"
+            src="assets/original-icon.png?v=3"
+            alt="AlIChinaBuy AllChinaBuy spreadsheet site icon for QC photos and streetwear finds"
+            width="229"
+            height="210"
+            decoding="async"
+          />
+          <span class="logo-caption" aria-hidden="true">AlIChinaBuy</span>
+        </span>
+        <span>AllChinaBuy Spreadsheet</span>
+      </a>
+      <nav class="nav" aria-label="Site navigation">
+        <a href="index.html">Home</a>
+        <a href="finds.html" aria-current="page">Finds</a>
+        <a href="categories.html">Categories</a>
+        <a href="review.html">Review</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <p class="hero-kicker"><span>ALLCHINABUY</span> FINDS</p>
+        <h1>AllChinaBuy Spreadsheet Finds with QC Photos</h1>
+        <p>
+          Search MaisonLooks streetwear picks in an AllChinaBuy spreadsheet-style layout. Filter shoes, hoodies, jackets, bags, accessories, and daily outfit finds with QC photo notes.
+        </p>
+        <form class="search-panel" role="search" aria-label="Search AllChinaBuy spreadsheet finds">
+          <input id="searchInput" name="q" type="search" placeholder="Search AllChinaBuy spreadsheet finds..." aria-label="Search AllChinaBuy spreadsheet finds by product, category, or QC note" />
+          <select id="sortSelect" aria-label="Sort AllChinaBuy spreadsheet finds">
+            <option value="featured">Featured</option>
+            <option value="rating">Best QC rating</option>
+            <option value="price-low">Price low to high</option>
+            <option value="price-high">Price high to low</option>
+          </select>
+          <button type="submit">Search</button>
+        </form>
+      </section>
+
+      <section class="finds-layout" aria-label="AllChinaBuy spreadsheet category filters">
+        <div id="categoryGrid" class="category-grid"></div>
+      </section>
+
+      <section id="finds" class="finds-section">
+        <div class="section-title-row">
+          <div>
+            <h2>QC Photo Spreadsheet Picks</h2>
+            <p id="resultsMeta">Loading AllChinaBuy spreadsheet finds.</p>
+          </div>
+        </div>
+        <div id="filterTabs" class="filter-tabs" role="tablist" aria-label="Filter AllChinaBuy spreadsheet finds"></div>
+        <div id="productGrid" class="product-grid" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <script src="js/products.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

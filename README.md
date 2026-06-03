@@ -6,7 +6,10 @@ https://streetstyle.maisonlooks.com/
 
 ## Files
 
-- `index.html` - SEO landing page and product grid
+- `index.html` - SEO landing page and category shortcuts
+- `finds.html` - indexable AllChinaBuy spreadsheet finds page with search and filters
+- `categories.html` - indexable category directory for shoes, hoodies, bags, and other finds
+- `review.html` - indexable QC photo review guide
 - `styles.css` - responsive layout and visual design
 - `js/products.js` - editable product data
 - `js/main.js` - search, category filters, and sorting
