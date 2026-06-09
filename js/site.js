@@ -402,7 +402,7 @@
     const url = query
       ? "https://streetstyle.maisonlooks.com/en/search?q=" + encodeURIComponent(query)
       : "https://streetstyle.maisonlooks.com/en/search?q=";
-    window.open(url, "_blank", "noopener,noreferrer");
+    window.location.href = url;
     return false;
   };
 
