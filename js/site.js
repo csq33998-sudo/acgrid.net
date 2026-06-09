@@ -396,12 +396,15 @@
     applyTheme(document.body.classList.contains("dark-mode") ? "light" : "dark");
   });
 
-  storeSearch.addEventListener("submit", (event) => {
+  window.openMaisonLooksSearch = function openMaisonLooksSearch(event) {
     event.preventDefault();
     const query = storeSearchInput.value.trim();
     const url = query
-      ? "https://maisonlooks.com/en/products?search=" + encodeURIComponent(query)
-      : "https://maisonlooks.com/en/products";
+      ? "https://streetstyle.maisonlooks.com/en/search?q=" + encodeURIComponent(query)
+      : "https://streetstyle.maisonlooks.com/en/search?q=";
     window.open(url, "_blank", "noopener,noreferrer");
-  });
+    return false;
+  };
+
+  storeSearch.addEventListener("submit", window.openMaisonLooksSearch);
 })();

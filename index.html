@@ -159,8 +159,8 @@
         <p>
           <span data-i18n="heroText">Use this MaisonLooks spreadsheet to search streetwear finds by style, category, and buying intent. Compare shoes, hoodies, jackets, bags, accessories, and daily outfit pieces with QC-photo focused notes before you open the store page.</span>
         </p>
-        <form class="store-search" id="storeSearch" role="search" aria-label="Search MaisonLooks store" action="https://maisonlooks.com/en/products" method="get" target="_blank" rel="noopener noreferrer">
-          <input id="storeSearchInput" name="search" type="search" aria-label="Search MaisonLooks AllChinaBuy spreadsheet finds" data-i18n-placeholder="searchPlaceholder" placeholder="Search MaisonLooks products..." />
+        <form class="store-search" id="storeSearch" role="search" aria-label="Search MaisonLooks store" action="https://streetstyle.maisonlooks.com/en/search" method="get" target="_blank" rel="noopener noreferrer" onsubmit="return openMaisonLooksSearch(event)">
+          <input id="storeSearchInput" name="q" type="search" aria-label="Search MaisonLooks AllChinaBuy spreadsheet finds" data-i18n-placeholder="searchPlaceholder" placeholder="Search MaisonLooks products..." />
           <button type="submit" data-i18n="searchButton">Search</button>
         </form>
       </section>
@@ -168,7 +168,7 @@
       <section id="categories" class="categories">
         <h2 data-i18n="categoryHeading">Shop by category below!</h2>
         <div class="grid">
-          <a id="shoes" class="card" href="https://maisonlooks.com/en/c/sneakers" target="_blank" rel="noopener noreferrer" aria-label="Shop shoes from the AllChinaBuy spreadsheet with QC photos">
+          <a id="shoes" class="card" href="https://streetstyle.maisonlooks.com/en?categorySlug=shoes" target="_blank" rel="noopener noreferrer" aria-label="Shop shoes from the AllChinaBuy spreadsheet with QC photos">
             <svg class="vector-art" viewBox="0 0 240 180" role="img" aria-label="Shoes category for AllChinaBuy spreadsheet finds">
               <ellipse class="shadow" cx="120" cy="149" rx="76" ry="10" />
               <path class="cream" d="M43 118c32 7 56 1 79-18 14-12 30-11 45 5l30 31c8 8 4 20-8 22-52 8-104 2-153-9-18-4-22-18-11-30l9-10c3-3 4 6 9 9z" />
@@ -179,7 +179,7 @@
             </svg>
             <h3 data-i18n="catShoes">Shoes</h3>
           </a>
-          <a id="hoodies" class="card" href="https://maisonlooks.com/en/c/hoodies-sweatshirts" target="_blank" rel="noopener noreferrer" aria-label="Shop hoodies from the AllChinaBuy spreadsheet with QC photos">
+          <a id="hoodies" class="card" href="https://streetstyle.maisonlooks.com/en?categorySlug=hoodies" target="_blank" rel="noopener noreferrer" aria-label="Shop hoodies from the AllChinaBuy spreadsheet with QC photos">
             <svg class="vector-art" viewBox="0 0 240 180" role="img" aria-label="Hoodies category for AllChinaBuy spreadsheet finds">
               <ellipse class="shadow" cx="120" cy="154" rx="70" ry="10" />
               <path class="lavender" d="M79 48c10-18 28-27 41-27s31 9 41 27l31 24-18 37-20-11v58H86V98l-20 11-18-37 31-24z" />
@@ -189,7 +189,7 @@
             </svg>
             <h3 data-i18n="catHoodies">Hoodies</h3>
           </a>
-          <a id="tshirts" class="card" href="https://maisonlooks.com/en/c/t-shirts" target="_blank" rel="noopener noreferrer" aria-label="Shop T-shirts from the AllChinaBuy spreadsheet with QC photos">
+          <a id="tshirts" class="card" href="https://streetstyle.maisonlooks.com/en?categorySlug=t-shirts" target="_blank" rel="noopener noreferrer" aria-label="Shop T-shirts from the AllChinaBuy spreadsheet with QC photos">
             <svg class="vector-art" viewBox="0 0 240 180" role="img" aria-label="T-shirts category for AllChinaBuy spreadsheet finds">
               <ellipse class="shadow" cx="120" cy="153" rx="67" ry="10" />
               <path class="mint" d="M81 45l22-16h34l22 16 33 18-22 38-21-11v66H91V90l-21 11-22-38z" />
@@ -199,7 +199,7 @@
             </svg>
             <h3 data-i18n="catTshirts">T-Shirts</h3>
           </a>
-          <a id="jackets" class="card" href="https://maisonlooks.com/en/c/jackets" target="_blank" rel="noopener noreferrer" aria-label="Shop jackets from the AllChinaBuy spreadsheet with QC photos">
+          <a id="jackets" class="card" href="https://streetstyle.maisonlooks.com/en?categorySlug=jackets" target="_blank" rel="noopener noreferrer" aria-label="Shop jackets from the AllChinaBuy spreadsheet with QC photos">
             <svg class="vector-art" viewBox="0 0 240 180" role="img" aria-label="Jackets category for AllChinaBuy spreadsheet finds">
               <ellipse class="shadow" cx="120" cy="154" rx="70" ry="10" />
               <path class="navy" d="M88 38h64l36 28-21 38-15-9v62H88V95l-15 9-21-38z" />
@@ -209,7 +209,7 @@
             </svg>
             <h3 data-i18n="catJackets">Jackets</h3>
           </a>
-          <a id="pants" class="card" href="https://maisonlooks.com/en/c/trousers-pants" target="_blank" rel="noopener noreferrer" aria-label="Shop pants and shorts from the AllChinaBuy spreadsheet with QC photos">
+          <a id="pants" class="card" href="https://streetstyle.maisonlooks.com/en?categorySlug=pants" target="_blank" rel="noopener noreferrer" aria-label="Shop pants and shorts from the AllChinaBuy spreadsheet with QC photos">
             <svg class="vector-art" viewBox="0 0 240 180" role="img" aria-label="Pants and shorts category for AllChinaBuy spreadsheet finds">
               <ellipse class="shadow" cx="120" cy="156" rx="66" ry="10" />
               <path class="charcoal" d="M74 31h92l-8 124h-41l3-74-18 74H62z" />
@@ -218,7 +218,7 @@
             </svg>
             <h3 data-i18n="catPants">Pants/Shorts</h3>
           </a>
-          <a id="jersey" class="card" href="https://maisonlooks.com/en/c/shirts-blouses" target="_blank" rel="noopener noreferrer" aria-label="Shop jerseys from the AllChinaBuy spreadsheet with QC photos">
+          <a id="jersey" class="card" href="https://streetstyle.maisonlooks.com/en?categorySlug=jersey" target="_blank" rel="noopener noreferrer" aria-label="Shop jerseys from the AllChinaBuy spreadsheet with QC photos">
             <svg class="vector-art" viewBox="0 0 240 180" role="img" aria-label="Jersey category for AllChinaBuy spreadsheet finds">
               <ellipse class="shadow" cx="120" cy="153" rx="68" ry="10" />
               <path class="royal" d="M82 42l20-14h36l20 14 31 20-22 35-18-9v68H91V88l-18 9-22-35z" />
@@ -227,7 +227,7 @@
             </svg>
             <h3 data-i18n="catJersey">Jersey</h3>
           </a>
-          <a id="accessories" class="card" href="https://maisonlooks.com/en/products" target="_blank" rel="noopener noreferrer" aria-label="Shop accessories from the AllChinaBuy spreadsheet with QC photos">
+          <a id="accessories" class="card" href="https://streetstyle.maisonlooks.com/en?categorySlug=accessories" target="_blank" rel="noopener noreferrer" aria-label="Shop accessories from the AllChinaBuy spreadsheet with QC photos">
             <svg class="vector-art" viewBox="0 0 240 180" role="img" aria-label="Accessories category for AllChinaBuy spreadsheet finds">
               <ellipse class="shadow" cx="120" cy="140" rx="64" ry="9" />
               <circle class="amber" cx="102" cy="86" r="36" />
@@ -237,7 +237,7 @@
             </svg>
             <h3 data-i18n="catAccessories">Accessories</h3>
           </a>
-          <a id="perfume" class="card" href="https://maisonlooks.com/en/c/beauty" target="_blank" rel="noopener noreferrer" aria-label="Shop perfume and fragrances from the AllChinaBuy spreadsheet with QC photos">
+          <a id="perfume" class="card" href="https://streetstyle.maisonlooks.com/en?categorySlug=perfume" target="_blank" rel="noopener noreferrer" aria-label="Shop perfume and fragrances from the AllChinaBuy spreadsheet with QC photos">
             <svg class="vector-art" viewBox="0 0 240 180" role="img" aria-label="Perfume category for AllChinaBuy spreadsheet finds">
               <ellipse class="shadow" cx="120" cy="159" rx="50" ry="9" />
               <path class="rose" d="M94 56h52l12 22v68c0 8-6 14-14 14H96c-8 0-14-6-14-14V78z" />
@@ -247,7 +247,7 @@
             </svg>
             <h3 data-i18n="catPerfume">Perfume</h3>
           </a>
-          <a id="bags" class="card" href="https://maisonlooks.com/en/c/bags-backpacks" target="_blank" rel="noopener noreferrer" aria-label="Shop bags and backpacks from the AllChinaBuy spreadsheet with QC photos">
+          <a id="bags" class="card" href="https://streetstyle.maisonlooks.com/en?categorySlug=bags" target="_blank" rel="noopener noreferrer" aria-label="Shop bags and backpacks from the AllChinaBuy spreadsheet with QC photos">
             <svg class="vector-art" viewBox="0 0 240 180" role="img" aria-label="Bags category for AllChinaBuy spreadsheet finds">
               <ellipse class="shadow" cx="120" cy="158" rx="68" ry="9" />
               <path class="tan" d="M65 74h110l12 82H53z" />
@@ -256,7 +256,7 @@
             </svg>
             <h3 data-i18n="catBags">Bags</h3>
           </a>
-          <a id="electronics" class="card" href="https://maisonlooks.com/en/c/electronics" target="_blank" rel="noopener noreferrer" aria-label="Shop electronics from the AllChinaBuy spreadsheet with QC photos">
+          <a id="electronics" class="card" href="https://streetstyle.maisonlooks.com/en?categorySlug=electronics" target="_blank" rel="noopener noreferrer" aria-label="Shop electronics from the AllChinaBuy spreadsheet with QC photos">
             <svg class="vector-art" viewBox="0 0 240 180" role="img" aria-label="Electronics category for AllChinaBuy spreadsheet finds">
               <ellipse class="shadow" cx="120" cy="164" rx="52" ry="8" />
               <rect class="charcoal" x="70" y="33" width="100" height="130" rx="14" />
@@ -266,7 +266,7 @@
             </svg>
             <h3 data-i18n="catElectronics">Electronics</h3>
           </a>
-          <a id="headwear" class="card" href="https://maisonlooks.com/en/c/headwear" target="_blank" rel="noopener noreferrer" aria-label="Shop headwear and hats from the AllChinaBuy spreadsheet with QC photos">
+          <a id="headwear" class="card" href="https://streetstyle.maisonlooks.com/en?categorySlug=headwear" target="_blank" rel="noopener noreferrer" aria-label="Shop headwear and hats from the AllChinaBuy spreadsheet with QC photos">
             <svg class="vector-art" viewBox="0 0 240 180" role="img" aria-label="Headwear category for AllChinaBuy spreadsheet finds">
               <ellipse class="shadow" cx="124" cy="148" rx="72" ry="9" />
               <path class="forest" d="M57 112c8-46 31-70 65-70 38 0 58 28 61 70H57z" />
@@ -275,7 +275,7 @@
             </svg>
             <h3 data-i18n="catHeadwear">Headwear</h3>
           </a>
-          <a id="other" class="card" href="https://maisonlooks.com/en/products" target="_blank" rel="noopener noreferrer" aria-label="Shop all other AllChinaBuy spreadsheet finds with QC photos">
+          <a id="other" class="card" href="https://streetstyle.maisonlooks.com/en?categorySlug=other" target="_blank" rel="noopener noreferrer" aria-label="Shop all other AllChinaBuy spreadsheet finds with QC photos">
             <svg class="vector-art" viewBox="0 0 240 180" role="img" aria-label="Other category for AllChinaBuy spreadsheet finds">
               <ellipse class="shadow" cx="120" cy="159" rx="70" ry="9" />
               <path class="purple" d="M76 65h88c13 0 24 11 24 24v43c0 13-11 24-24 24H76c-13 0-24-11-24-24V89c0-13 11-24 24-24z" />
@@ -336,7 +336,7 @@
         </div>
       </section>
     </main>
-    <script src="js/site.js?v=3"></script>
+    <script src="js/site.js?v=5"></script>
   </body>
 </html>
 
