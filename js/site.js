@@ -399,7 +399,9 @@
   storeSearch.addEventListener("submit", (event) => {
     event.preventDefault();
     const query = storeSearchInput.value.trim();
-    const url = "https://maisonlooks.com/en/products?search=" + encodeURIComponent(query);
+    const url = query
+      ? "https://maisonlooks.com/en/products?search=" + encodeURIComponent(query)
+      : "https://maisonlooks.com/en/products";
     window.open(url, "_blank", "noopener,noreferrer");
   });
 })();
